@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/postgres"
+    username: postgres
+    password: password
+  profiles:
+    active: dev
+  sql:
+    init:
+      mode: always
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+cc:
+  welcome-message: Welcome to Shantanu's blog!!
+  about: This is a collection of my contents.
