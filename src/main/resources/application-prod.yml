@@ -1,3 +1,9 @@
+spring:
+  datasource:
+    url: "jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}"
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+
 cc:
   welcome-message: This is PRODUCTION!!
   about: Production message.
